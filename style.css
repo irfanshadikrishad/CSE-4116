@@ -1,0 +1,25 @@
+:root {
+  --color: #252525;
+  --background: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color);
+  background-color: var(--background);
+}
+
+nav {
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+}
