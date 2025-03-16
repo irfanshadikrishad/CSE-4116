@@ -1,0 +1,116 @@
+:root {
+  --light-background: #f5f5f5;
+  --light-text: #202020;
+  --light-primary: #2245e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--light-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-primary);
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.nav_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  text-transform: capitalize;
+}
+.nav_left > a {
+  text-decoration: none;
+  color: var(--light-text);
+}
+.nav_left > a:hover {
+  color: var(--light-primary);
+}
+.nav_mid > h1 {
+  text-align: center;
+  color: var(--light-primary);
+}
+.nav_right {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav_right > button {
+  border: none;
+  color: var(--light-background);
+  background-color: var(--light-primary);
+  padding: 5px 35px;
+  cursor: pointer;
+}
+
+/* ------------------------------ */
+/* ----------- HOME ------------- */
+/* ------------------------------ */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 250px;
+}
+.hero_main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero_main > h1 {
+  font-size: 3rem;
+}
+.hero_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: -1;
+}
+.hero_buttons > button {
+  cursor: pointer;
+  border: none;
+  padding: 5px 25px;
+}
+.hero_purchase {
+  color: var(--light-background);
+  background-color: var(--light-primary);
+}
+.hero_learn {
+  background-color: transparent;
+  color: var(--light-primary);
+  border: 1.5px solid var(--light-primary) !important;
+}
