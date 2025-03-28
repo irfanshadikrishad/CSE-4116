@@ -279,3 +279,128 @@ footer > hr {
 .footer_p2_2 > a:hover {
   color: var(--light-primary);
 }
+
+/* --------------------- */
+/* ------ ABOUT -------- */
+/* --------------------- */
+.four6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.about_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 100px;
+}
+.about_p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about_img {
+  width: 400px;
+}
+.about_p2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .s5 {
+    margin-bottom: -200px;
+  }
+  .hero_main > h1 {
+    font-size: 2rem;
+  }
+  .section1_p1 > h1,
+  .section2_p2 > h1,
+  .s5_price > h1,
+  .s5 > h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .s5 {
+    margin-bottom: -250px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    margin-top: 80px;
+  }
+  .hero_main {
+    width: auto;
+  }
+  .hero_main > h1 {
+    font-size: 1.5rem;
+  }
+  .section1 {
+    margin-top: 0;
+    grid-template-columns: 1.5fr 1fr;
+    padding-bottom: 0;
+    gap: 20px;
+  }
+  .section1_p2 > img,
+  .section2_p1 > img {
+    width: 100%;
+  }
+  .section2 {
+    grid-template-columns: 1fr 1.5fr;
+    padding-bottom: 0;
+    gap: 20px;
+  }
+  .s5 {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .section1 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .section1_p2 > img,
+  .section2_p1 > img {
+    width: 50%;
+  }
+  .section1_p2,
+  .section2_p1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section2 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .s5 {
+    margin-bottom: -280px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav_main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav_mid > h1 {
+    text-align: right;
+  }
+  .nav_right {
+    display: none;
+  }
+  .section1_p1_2 {
+    flex-direction: column;
+  }
+  .footer_main > h1 {
+    display: none;
+  }
+  .s5 {
+    padding-bottom: 100px;
+  }
+}
